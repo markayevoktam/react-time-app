@@ -1,0 +1,185 @@
+/* App.css */
+
+/* Umumiy reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asosiy konteyner */
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Sarlavha */
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Bo'limlar */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Valyuta kursi bo'limi */
+.currency-section {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.currency-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.currency-section select {
+  padding: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.rates-list {
+  margin-top: 20px;
+}
+
+.rates-list li {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+/* Tranzaksiya bo'limi */
+.transaction-section {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.transaction-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Tranzaksiyalar ro'yxati */
+.transaction-list {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f1f1f1;
+}
+
+/* Grafik bo'limi */
+.chart-section {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Responsiv dizayn - kichik ekranlar uchun */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .currency-section,
+  .transaction-section,
+  .transaction-list,
+  .chart-section {
+    padding: 15px;
+  }
+
+  .currency-section select,
+  .form-group input,
+  .form-group select,
+  .add-button {
+    width: 100%;
+  }
+
+  .rates-list {
+    font-size: 1em;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    font-size: 0.9em;
+  }
+}
+
+/* Responsiv dizayn - juda kichik ekranlar uchun */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    font-size: 0.8em;
+  }
+
+  .add-button {
+    padding: 8px 15px;
+  }
+}
+.chart-section{
+  padding: 20% 20%;
+}
